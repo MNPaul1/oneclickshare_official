@@ -7,6 +7,7 @@ const NavItems = [
     {name: "Analytics", icon:"icons/statistics.png"},
      {name: "Post",icon:"icons/save-for-later.png"},
       {name: "Settings",icon:"icons/cogwheel.png"},
+      
       {name: "Logout",icon:"icons/logout.png"}
     ]
 
