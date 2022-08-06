@@ -1,0 +1,18 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 0 0 2%;
+}
+.Header h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.Header .avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
+    color: #8990AD;
+}

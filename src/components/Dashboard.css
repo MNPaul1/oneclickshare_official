@@ -1,0 +1,75 @@
+.container{
+    display: grid;
+    width: 85%;
+    height: 100vh;
+    margin-left: 14%;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.7fr 0.7fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "sub-header"
+      "information"; 
+  }
+  .header { grid-area: header; }
+  .sub-header { 
+    grid-area: sub-header; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sub-header .elements{
+    display:flex;
+    border-radius: 26px;
+    align-items: center;
+    margin:0 2% 2% 0;
+    padding: 0 0 0 2%;
+    flex-direction:row;
+    background-color: #ffffff;
+}
+.information { 
+    grid-area: information; 
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+}
+.information .chart{
+    margin-right: 2%;
+    background-color: #ffffff;
+    border-radius: 26px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.information .chart div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.information .chart div input{
+    width: 20em;
+    height: 3.5em;
+    border-radius: 15px;
+    margin-bottom: 1.5%;
+    background-color: transparent;
+    border: 1px solid #707070;
+}
+.information .userProfile{
+    background-color: #ffffff;
+    border-radius: 26px;
+    padding: 2%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 2%;
+}
+
+.information .options .active{
+    -webkit-text-stroke: 1px #2C6DFC; 
+    color: #7E84A3;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 16%);
+}
