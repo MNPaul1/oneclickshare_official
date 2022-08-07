@@ -1,0 +1,32 @@
+.postcontainer {
+    display:flex;
+    height:100vh;
+    width: 85%;
+    margin-left:14%;
+    gap: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.postcomposer {
+    flex: 3;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 1% 4%;
+    gap: 3%;
+    background-color: white;
+    border-radius: 15px;
+}
+.postpreview {
+    flex: 5;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 3%;
+}

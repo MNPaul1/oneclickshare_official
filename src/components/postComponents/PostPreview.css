@@ -1,0 +1,23 @@
+.MuiFormControl-root {
+    width: 100%;
+    
+    
+}
+.MuiTypography-h4 {
+    flex: 1;
+    align-self: flex-start;
+    
+    color:#444;
+}
+.radiogroup { 
+    flex: 1;
+    display:flex;
+    width:90%;
+    margin: auto;
+    background-color: white;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+.MuiCard-root {
+    flex: 8;
+}
