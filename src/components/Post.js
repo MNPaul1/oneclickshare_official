@@ -3,7 +3,7 @@ import './Post.css'
 import PostComposer from './postComponents/PostComposer'
 import PostPreview from './postComponents/PostPreview'
 
-export default function Analytics() {
+export default function Post() {
   return (
     <div className='postcontainer'>
       <div className="postcomposer">
