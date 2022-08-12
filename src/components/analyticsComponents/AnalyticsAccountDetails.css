@@ -1,0 +1,38 @@
+.AccountDetails{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+h4{
+    width: 100%;
+    margin-left: 1%;
+}
+
+.analytics-1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 1% 0 1%;
+}
+.analytics-1 .numbers{
+    margin: 3% 0 0 0;
+    padding: 3% 0 0 0;
+}
+.analytics-1 > *{
+    flex: 1 1 48%;
+}
+
+.topMedia{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 1% 0 1%;
+}
+.topMedia h4{
+    padding: 0;
+    margin: 10px 0 15px 0;
+}
+.topMedia > *{
+    flex: 1 1 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 2% 0;
+}
