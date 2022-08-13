@@ -13,13 +13,13 @@ export default function LeftComponent(props) {
   return (<>
   {accounts.map((item, index)  => (
   <Card key={index}
-    sx={{ height: '100%',width:"55%", boxShadow:"none"}}
+    sx={{ height: '100%',width:"100%", boxShadow:"none", borderRadius: "0",  justifyContent: 'space-around', alignItems: 'center' }}
   >
     <CardContent>
       <Grid
         container
-        spacing={3}
-        sx={{ justifyContent: 'space-between',marginRight:6 }}
+        // spacing={3}
+        sx={{ width:"100%",textAlign:'center' }}
       >
         <Grid item>
           <Typography
@@ -33,7 +33,8 @@ export default function LeftComponent(props) {
             sx={{
               backgroundColor: 'error.main',
               height: 56,
-              width: 56
+              width: 56,
+              margin: 'auto'
             }}
           >
             <item.icon />
@@ -44,8 +45,9 @@ export default function LeftComponent(props) {
           <Typography
             color="textPrimary"
             variant="h3"
-            height={"100%"}
-            fontSize={"2em"}
+            height={"auto"}
+            fontSize={"1.5em"}
+            marginTop="6px"
           >
             {props.followers[item.name.toLowerCase()]}
           </Typography>

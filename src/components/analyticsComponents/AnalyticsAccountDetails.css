@@ -1,7 +1,10 @@
 .AccountDetails{
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
+    /* padding-top: 10%; */
+    box-sizing: border-box;
+    width:98%;
+    margin:auto;
 }
 h4{
     width: 100%;
@@ -11,10 +14,10 @@ h4{
 .analytics-1{
     display: flex;
     flex-wrap: wrap;
-    padding: 2% 1% 0 1%;
+    padding: 0 0 0 1%;
 }
 .analytics-1 .numbers{
-    margin: 3% 0 0 0;
+    margin: 0 0 0 0;
     padding: 3% 0 0 0;
 }
 .analytics-1 > *{
@@ -25,6 +28,8 @@ h4{
     display: flex;
     flex-wrap: wrap;
     padding: 2% 1% 0 1%;
+    width:97%;
+    margin-right:auto;
 }
 .topMedia h4{
     padding: 0;

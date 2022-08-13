@@ -16,8 +16,7 @@ export default function RightComponent() {
           >
             CONNECTED DEVICES
     </Typography>
-    <div style={{display:'flex', flexDirection:'row'}}>
-
+    <div style={{display:'flex', flexDirection:'row', justifyContent:'center', gap:'9%'}}>
         {icons.map((icon, index) =>(
             <Grid key={index}>
             <Avatar
@@ -25,7 +24,6 @@ export default function RightComponent() {
                 backgroundColor: 'black',
                 height: 56,
                 width: 56,
-                margin:2,
                 opacity:icon.opacity
                 }}
             >

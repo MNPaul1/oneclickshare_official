@@ -31,10 +31,12 @@ export default function AnalyticsGraph(props) {
           fill: true,
           tension: 0.4,
           backgroundColor: "rgba(75,192,192,0.4)",
-          borderColor: "rgba(75,192,192,1)"
+          borderColor: "rgba(75,192,192,1)",
+          borderWidth: "4"
         },
       ]
-}} />
+    }}
+ />
   </div>)
 
 }

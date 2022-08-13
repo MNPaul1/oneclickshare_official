@@ -32,7 +32,7 @@ export const options = {
           usePointStyle: true,
           pointStyle: "circle",
           padding: 10,
-          boxHeight: 7,
+          boxHeight: 7
         },
         datasets: {
           padding: 0,
@@ -42,12 +42,12 @@ export const options = {
     title: {
       display: true,
       position:'top',
-      text: 'Recent Post Analysis',
+      text: 'Recent Post Analysis'
     },
   },
 };
 
-const labels = ['INSTAGRAM', 'YOUTUBE', ];
+const labels = ['INSTAGRAM', 'YOUTUBE'];
 
 const likes = [5220,6540]
 const Comments = [2223,3325]
@@ -75,7 +75,7 @@ export const data = {
 };
 
 export default function Barchart() {
-  return <div style={{width:"70%"}}>
+  return <div style={{width:"100%"}}>
     <Bar options={options} data={data} />;
   </div>
 

@@ -10,10 +10,10 @@ export default function AnalyticsAccountDetails(props) {
   const Data = props.Data
   console.log(props)
   return (
-    <div className='AccountDetails'>
-    <h4>
-    Account Analytics
-    </h4>
+  <div className='AccountDetails'>
+    
+    <h4>Account Analytics</h4>
+
     <div className='analytics-1'>
       {LabelList.map((item,index) =>(
         <span key={index}>
@@ -22,6 +22,7 @@ export default function AnalyticsAccountDetails(props) {
         </span>
       ))}
     </div>
+
     <div className="topMedia">
         <h4>Top Posts</h4>
         {
@@ -32,8 +33,8 @@ export default function AnalyticsAccountDetails(props) {
             </span>
           ))
         }
-
     </div>
+
   </div>
   )
 }

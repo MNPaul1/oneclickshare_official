@@ -16,7 +16,7 @@ const instagramData = {
 const youtubeData = {
   name:"Nandan",
   username:"Mahan's Tube",
-  followers: "1.23 M Subscribers",
+  followers: "1.23M Subscribers",
   following: "10 Subscription",
   posts:"25 Video"
 }
@@ -50,20 +50,21 @@ export default function Dashboard() {
   let userInfo = HandleClick(accountSelected)
   return (
     <div className='container'>
-      <div className="header">
+      <div className="Header">
         <Header />
       </div>
-      <div className="sub-header">
+      
       {/* sub-header have two divs with different width one div use to show user followers and another one shows connected accounts */}
-      <div className="elements" style={{width: "55%"}}>
-        <LeftComponent followers={{instagram:instagramData.followers, youtube:youtubeData.followers}}/>
-      </div>
-      <div className="elements" style={{width: "45%"}}>
-        <RightComponent />
-      </div>
-      </div>
-      <div className="information">
-        <div className="chart">
+        <div className="LeftComponent" >
+          <LeftComponent followers={{instagram:instagramData.followers, youtube:youtubeData.followers}}/>
+        </div>
+        <div className="RightComponent">
+          <RightComponent />
+        </div>
+      
+      
+        <div className="Chart">
+          
           <Barchart />
           <div className="options">
             <input type="button" value={"INSTAGRAM"} id={"INSTAGRAM"} className="active" onClick={instagramHandler}/>
@@ -71,10 +72,10 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="userProfile">
+        <div className="UserProfile">
           <UserProfile userinfo={userInfo}/>
         </div>
       </div>
-    </div>
+    
   )
 }
