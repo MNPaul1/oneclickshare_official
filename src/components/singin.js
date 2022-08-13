@@ -16,8 +16,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {..."One Click Share"}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit">
+        OneClickShare
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -40,6 +40,7 @@ export default function SignIn() {
   };
 
   return (
+    <div style={{"backgroundColor":"#F6F6F6", "height":"100vh", "width":"100%"}}>
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -110,4 +111,4 @@ export default function SignIn() {
         <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
-  );}
+    </div>);}
