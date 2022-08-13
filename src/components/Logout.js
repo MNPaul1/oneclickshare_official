@@ -1,7 +1,8 @@
 import React from 'react'
+import SignIn from './singin'
 
 export default function Logout() {
   return (
-    <div className='container'>Logout</div>
+    <SignIn />
   )
 }

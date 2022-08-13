@@ -8,7 +8,6 @@ export default function AnalyticsAccountDetails(props) {
   const LabelList = props.LabelList;
   const TopContent = props.content;
   const Data = props.Data
-  console.log(props)
   return (
   <div className='AccountDetails'>
     

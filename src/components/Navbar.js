@@ -6,13 +6,11 @@ const NavItems = [
   {name: "Dashboard", icon: "icons/dashboard.png"},
   {name: "Analytics", icon:"icons/statistics.png"},
    {name: "Post",icon:"icons/save-for-later.png"},
-    {name: "Settings",icon:"icons/cogwheel.png"},
     {name: "Logout",icon:"icons/logout.png"}
   ]
 
 
 function HandleClick(e) {
-  console.log(window.location.pathname)
   let elements = document.getElementsByClassName("NavItem");
   Array.from(elements).forEach(element => {
     element.classList.remove('active')
@@ -27,6 +25,7 @@ function HandleClick(e) {
 
 export default function Navbar() {
   return (
+    <>
     <nav className='navBar'>
         {
           NavItems.map((item, index)=>(   
@@ -37,5 +36,6 @@ export default function Navbar() {
         ))
     } 
     </nav>
+  </>
   )
 }

@@ -5,6 +5,7 @@ import UserProfile from './dashboardComponents/userProfile';
 import LeftComponent from './dashboardComponents/LeftComponent';
 import RightComponent from './dashboardComponents/RightComponent';
 import Header from './dashboardComponents/Header';
+import Navbar from './Navbar';
 
 const instagramData = {
   name:"Mahan",
@@ -49,6 +50,9 @@ export default function Dashboard() {
   }
   let userInfo = HandleClick(accountSelected)
   return (
+    <>
+
+    <Navbar />
     <div className='container'>
       <div className="Header">
         <Header />
@@ -76,6 +80,6 @@ export default function Dashboard() {
           <UserProfile userinfo={userInfo}/>
         </div>
       </div>
-    
+    </>
   )
 }

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Analytics.css'
 import AnalyticsGraph from './analyticsComponents/AnalyticsGraph'
 import AnalyticsAccountDetails from './analyticsComponents/AnalyticsAccountDetails'
+import Navbar from './Navbar'
 
 const demoYoutTubeData = ["500k", "29k", "55h", "1m"]
 const YouTubeLabelList = ["Subscribers", "Last month", "Watch time", "Views"]
@@ -49,6 +50,10 @@ export default function Analytics() {
     }
   }
   return (
+    <>
+
+
+    <Navbar />
     <div className="analyticscontainer">
       <h1 className="AnalyticsPlatformName">{Title}</h1>
       <div className="AnalyticsGraph">
@@ -62,5 +67,6 @@ export default function Analytics() {
 
       <div className="AnalyticsNextPlatform" onClick={contentHndler}>❯</div>
     </div>
+    </>
   )
 }
